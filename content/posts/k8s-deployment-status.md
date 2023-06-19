@@ -95,7 +95,7 @@ Import the package and respective class in the respective module
 ```python
 from k8s_deployment_status import DeploymentStatus
 
-@app.route('/api/ros/v1/deployment_status', methods=['GET'])
+@app.route('/api/v1/deployment_status', methods=['GET'])
 def deployment_status():
     deployment_status_data = DeploymentStatus().get()
     return jsonify(deployment_status_data)
