@@ -1,26 +1,60 @@
 baseURL: 'https://saltgen.github.io/'
 languageCode: en-us
-title: saltgen
+title: saltgen's blog
+paginate: 8
 theme: PaperMod
 
 menu:
   main:
     - identifier: contributions
       name: contributions
-      url: 'contributions/'
+      url: /contributions/
       weight: 1
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 2
     - identifier: archive
       name: archive
-      url: 'archive/'
-      weight: 2
+      url: /archive/
+      weight: 3
 
 params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    linkFullImages: true
+    permalinks:
+      posts: /:year/:month/:title/
+    author: saltgen
+    keywords: [saltgen, Blog, Portfolio, Resume]
+    showShareButtons: false
+    enableRobotsTXT: true
+    assetsDir: assets
+    UseHugoToc: true
+    showToc: true
+    tocOpen: true
     defaultTheme: auto
+    enableEmoji: true
+    ShowReadingTime: true
+    ShowCodeCopyButtons: true
+    ShowBreadCrumbs: true
+    cover:
+        hidden: false # hide everywhere but not in structured data
+        hiddenInList: false # hide on list pages and home
+        hiddenInSingle: true # hide on single page
+
     homeInfoParams:
-        Title: Hi there wave
-        Content: Can be Info, links, about...
+        Title: Hello there! 🖖🏽
+        Content: |
+              I'm Sagnik, I like to write code for the Web 🌐
+              And this is my coding journey, chronicled 📚  
+              I hope you benefit a little something from my posts ✨    
+              Don't hesitate to say hello! 👋🏽   
 
     socialIcons: # optional
+      - name: "email"
+        url: "mailto:sdnirvana94@gmail.com"
+      - name: "buymeacoffee"
+        url: "https://www.buymeacoffee.com/sdnirvana9F"
       - name: "github"
         url: "https://github.com/saltgen/"
       - name: "linkedin"
