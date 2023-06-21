@@ -23,7 +23,9 @@ It encapsulates methods to interact with the APIs, handle retries, and extract r
 Most of the data is memoized as well to avoid unnecessary API calls.
 
 
-**Note**: As of now only public GitHub repos are supported.
+**Note**: 
+ - The container image pulled by Kubernetes should be tagged with the target commit SHA from the deployment branch.
+ - As of now only public GitHub repos are supported.
 
 ## Installation 🔧
 
